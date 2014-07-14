@@ -1,0 +1,39 @@
+<ion-view hide-back-button="true" title="Awesome">
+  <ion-content padding="true" ng-controller="MainCtrl">
+    <h1>Main app here</h1>
+
+    <input type="file" file-input="files" multiple />
+    <button ng-click="upload()">Upload</button>
+
+      <button class="button" ng-click="toIntro()">Do Tutorial Again</button>
+
+     <!--<div ng-repeat="img in images">-->
+         <!--<img ng-src="{{img.filePayload}}"/>-->
+     <!--</div>-->
+
+      <!--<div class="row responsive-sm" ng-repeat="img in images">-->
+          <!--<div class="col">-->
+              <!--<img ng-src="{{img.filePayload}}" style="width:100%;"/>-->
+          <!--</div>-->
+      <!--</div>-->
+
+     <div class="crow up">
+         <div class="">
+             <div class="spacer half"></div>
+             <div class="label">Example (inspect me):</div>
+             <div class="spacer quarter"></div>
+             <div class="card" ng-repeat="img in images">
+                 <div class="image">
+                     <img ng-src="{{img.filePayload}}" style="width:100%;"/>
+                 </div>
+                 <div class="strong-padding">
+                     Located two hours south of Sydney in the Southern Highlands of South Wales, ...
+                     <br><br>
+                     <!--<a href="#" class="button text text-grey text-plus-2">Compartir</a>-->
+                 </div>
+             </div>
+         </div>
+     </div>
+
+  </ion-content>
+</ion-view>
